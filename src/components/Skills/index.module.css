@@ -1,0 +1,39 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: #ffffff;
+  /* background-color: lightblue; */
+  border: 1px solid #ececec;
+  border-radius: 20px;
+  padding: 32px 38px;
+  gap: 25px;
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: 700;
+  width: fit-content;
+  /* background-color: red; */
+}
+
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: plum; */
+  height: 200px;
+  width: 100%;
+  gap: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .skills {
+    padding: 24px;
+  }
+  .tiles-container {
+    height: auto;
+    /* gap: 12px; */
+  }
+}

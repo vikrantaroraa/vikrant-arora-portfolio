@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  min-height: 465px;
+  height: auto;
+  gap: 18px;
+  /* background-color: red; */
+}
+
+.projects {
+  flex: 1;
+}
+
+.skills-and-resume {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 18px;
+}
+
+.skills {
+  flex: 1.5;
+}
+
+.resume {
+  flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .projects {
+    height: auto;
+  }
+
+  .skills-and-resume {
+    height: auto;
+  }
+}
