@@ -4,13 +4,17 @@ import About from "src/components/About";
 
 import ProjectsSkillsResume from "src/components/ProjectsSkillsResume";
 import Footer from "src/components/Footer";
+import Projects from "src/components/Projects";
+import { useState } from "react";
+import HomePage from "src/pages/HomePage";
 
 function App() {
+  const [route, setRoute] = useState("/projects");
   return (
     <div className="App">
       <Header />
-      <About />
-      <ProjectsSkillsResume />
+      {route === "/" && <HomePage />}
+      {route === "/projects" && <Projects />}
       <Footer />
     </div>
   );
