@@ -3,30 +3,39 @@ import github from "src/assets/github.svg";
 import linkedIn from "src/assets/linkedIn.svg";
 import twitter from "src/assets/twitter.svg";
 import hamburgerMenu from "src/assets/hamburgerMenu.svg";
-import { Dispatch, SetStateAction } from "react";
+import { useState } from "react";
+import SidebarMenu from "src/components/SidebarMenu";
+import { Link } from "react-router-dom";
 
-interface HeaderProps {
-  setAppRoute: Dispatch<SetStateAction<string>>;
-}
+function Header() {
+  const [showSidebar, setShowSidebar] = useState(false);
 
-function Header({ setAppRoute }: HeaderProps) {
+  const toggleShowSidebar = () => setShowSidebar(!showSidebar);
+
   return (
     <div className={styles["header"]}>
       <div className={styles["name"]}>
         <h3>Vikrant</h3>
       </div>
       <div className={styles["nav-menu"]}>
-        <div className={styles["menu-item"]}>Home</div>
-        <div className={styles["menu-item"]}>About</div>
-        <div
-          className={styles["menu-item"]}
-          onClick={() => setAppRoute("/projects")}
-        >
+        <Link to="/" className={styles["menu-item"]}>
+          Home
+        </Link>
+        <Link to="/" className={styles["menu-item"]}>
+          About
+        </Link>
+        <Link to="/projects" className={styles["menu-item"]}>
           Projects
-        </div>
-        <div className={styles["menu-item"]}>Resume</div>
+        </Link>
+        <Link to="/" className={styles["menu-item"]}>
+          Resume
+        </Link>
       </div>
       <div className={styles["social-links"]}>
+        <SidebarMenu
+          showSidebar={showSidebar}
+          toggleShowSidebar={toggleShowSidebar}
+        />
         <div className={styles["link"]}>
           <img src={twitter} alt="twitter profile" />
         </div>
@@ -36,7 +45,11 @@ function Header({ setAppRoute }: HeaderProps) {
         <div className={styles["link"]}>
           <img src={linkedIn} alt="linkedIn profile" />
         </div>
-        <div id={styles["hamburger-menu-icon"]} className={styles["link"]}>
+        <div
+          id={styles["hamburger-menu-icon"]}
+          className={styles["link"]}
+          onClick={toggleShowSidebar}
+        >
           <img src={hamburgerMenu} alt="menu" />
         </div>
       </div>

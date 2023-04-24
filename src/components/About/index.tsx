@@ -10,7 +10,9 @@ function About() {
         </div>
       </div>
       <div className={styles["info-container"]}>
-        <div className={styles["heading"]}>About Me</div>
+        <div id="about" className={styles["heading"]}>
+          About Me
+        </div>
         <div className={styles["info"]}>
           I'm a Full-Stack Developer with a focus on Frontend. I have 2 years of
           expertise in JavaScript and specialize in creating engaging user

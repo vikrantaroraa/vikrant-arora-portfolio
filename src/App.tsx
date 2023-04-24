@@ -1,20 +1,30 @@
-import Header from "src/components/Header";
 import "./App.css";
-import { useState } from "react";
 import HomePage from "src/pages/HomePage";
 import ProjectsPage from "src/pages/ProjectsPage";
-import Footer from "src/components/Footer";
 
-function App() {
-  const [route, setRoute] = useState("/");
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+const Pages = () => {
   return (
-    <div className="App">
-      <Header setAppRoute={setRoute} />
-      {route === "/" && <HomePage />}
-      {route === "/projects" && <ProjectsPage />}
-      <Footer />
-    </div>
-  );
-}
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={<HomePage />}
+            errorElement={<h1>error page</h1>}
+          />
 
-export default App;
+          <Route
+            path="/projects"
+            element={<ProjectsPage />}
+            errorElement={<h1>error page</h1>}
+          />
+        </Routes>
+      </BrowserRouter>
+      {/* <RouterProvider router={router} />; */}
+    </>
+  );
+};
+
+export default Pages;

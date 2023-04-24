@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-and-icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+  padding: 20px 30px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
+  border-bottom: 1px solid #ddd;
+}
+
+.name {
+  font-style: italic;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 24px 28px;
+  font-size: 18px;
+  font-weight: 500;
+  gap: 10px;
+  background-color: #efefef;
+  color: #002b31;
+  border-bottom: 1px solid hsla(120, 3%, 61%, 0.3);
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: hsla(60, 6%, 51%, 0.1);
+}
+
+.icon-container {
+  height: 28px;
+  width: 28px;
+}
+
+.icon-container img {
+  height: 100%;
+  width: 100%;
+}

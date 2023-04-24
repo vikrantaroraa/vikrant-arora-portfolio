@@ -136,14 +136,18 @@ function Projects() {
       </div>
       <div className={styles["projects-grid"]}>
         {projectData.map(
-          ({ tags, name, imageUrl, description, link, backgroundColor }) => {
+          (
+            { tags, name, imageUrl, description, link, backgroundColor },
+            index
+          ) => {
             return (
               <ProjectCard
+                key={index}
                 tags={tags}
                 name={name}
                 imageUrl={imageUrl}
                 description={description}
-                link={description}
+                link={link}
                 backgroundColor={backgroundColor}
               />
             );

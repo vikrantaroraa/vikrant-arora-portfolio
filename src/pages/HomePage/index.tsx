@@ -1,12 +1,13 @@
 import About from "src/components/About";
 import ProjectsSkillsResume from "src/components/ProjectsSkillsResume";
+import Layout from "src/pages/Layout";
 
 function HomePage() {
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+    <Layout>
       <About />
       <ProjectsSkillsResume />
-    </div>
+    </Layout>
   );
 }
 

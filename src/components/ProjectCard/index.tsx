@@ -1,6 +1,5 @@
 import styles from "src/components/ProjectCard/index.module.css";
 import TechStackTile from "src/components/TechStackTile";
-import linkedIn from "src/assets/linkedIn.svg";
 import rightArrowWhite from "src/assets/rightArrowWhite.svg";
 
 interface ProjectCardProps {
@@ -23,8 +22,8 @@ function ProjectCard({
   return (
     <div className={styles["container"]}>
       <div className={styles["tiles-container"]}>
-        {tags.map((name) => (
-          <TechStackTile name={name} />
+        {tags.map((name, index) => (
+          <TechStackTile key={index} name={name} />
         ))}
       </div>
       <div className={styles["project-info"]}>
@@ -33,12 +32,14 @@ function ProjectCard({
           <img src={imageUrl} alt="project name" />
         </div>
         <p className={styles["description"]}>{description}</p>
-        <button className={styles["view-button"]}>
-          View Project
-          <span className={styles["right-arrow"]}>
-            <img src={rightArrowWhite} alt="right arrow" />
-          </span>
-        </button>
+        <a href={link} target="_blank" rel="noreferrer">
+          <button className={styles["view-button"]}>
+            View Project
+            <span className={styles["right-arrow"]}>
+              <img src={rightArrowWhite} alt="right arrow" />
+            </span>
+          </button>
+        </a>
       </div>
     </div>
   );
