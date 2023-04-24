@@ -9,6 +9,7 @@ interface ProjectCardProps {
   imageUrl: string;
   description: string;
   link: string;
+  backgroundColor?: string;
 }
 
 function ProjectCard({
@@ -17,6 +18,7 @@ function ProjectCard({
   imageUrl,
   description,
   link,
+  backgroundColor = "#f2e4ee",
 }: ProjectCardProps) {
   return (
     <div className={styles["container"]}>

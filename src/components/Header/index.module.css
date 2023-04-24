@@ -64,18 +64,40 @@
   display: none;
 }
 
+@media only screen and (max-width: 850px) {
+  .name {
+    font-size: 24px;
+  }
+  .nav-menu {
+    gap: 32px;
+  }
+  .menu-item {
+    font-size: 20px;
+  }
+
+  .link {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-menu {
+    display: none;
+  }
+
+  #hamburger-menu-icon {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .header {
     padding: 11px 15px;
   }
 
   .name {
-    font-size: 16px;
-    padding: 0;
-  }
-
-  .nav-menu {
-    display: none;
+    font-size: 20px;
   }
 
   .social-links {
@@ -84,12 +106,8 @@
   }
 
   .link {
-    height: 25px;
-    width: 25px;
+    height: 28px;
+    width: 28px;
     border-radius: 8px;
-  }
-
-  #hamburger-menu-icon {
-    display: block;
   }
 }

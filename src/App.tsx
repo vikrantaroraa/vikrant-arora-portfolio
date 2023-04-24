@@ -1,20 +1,17 @@
 import Header from "src/components/Header";
 import "./App.css";
-import About from "src/components/About";
-
-import ProjectsSkillsResume from "src/components/ProjectsSkillsResume";
-import Footer from "src/components/Footer";
-import Projects from "src/components/Projects";
 import { useState } from "react";
 import HomePage from "src/pages/HomePage";
+import ProjectsPage from "src/pages/ProjectsPage";
+import Footer from "src/components/Footer";
 
 function App() {
-  const [route, setRoute] = useState("/projects");
+  const [route, setRoute] = useState("/");
   return (
     <div className="App">
-      <Header />
+      <Header setAppRoute={setRoute} />
       {route === "/" && <HomePage />}
-      {route === "/projects" && <Projects />}
+      {route === "/projects" && <ProjectsPage />}
       <Footer />
     </div>
   );

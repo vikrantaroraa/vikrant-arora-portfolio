@@ -4,6 +4,7 @@
   width: 100%;
   gap: 22px;
   /* background-color: lightgreen; */
+  position: relative;
 }
 
 .experience-info {
@@ -72,6 +73,21 @@
   /* padding: 20px; */
 }
 
+.scroll-down-icon {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: 50px;
+  right: -20px;
+  /* background-color: red; */
+  z-index: 10;
+}
+
+.scroll-down-icon img {
+  height: 100%;
+  width: 100%;
+}
+
 @media only screen and (max-width: 960px) {
   .container {
     flex-direction: column;
@@ -79,7 +95,7 @@
   }
 
   .experience-info {
-    min-height: 512px;
+    min-height: 400px;
     height: auto;
     width: 100%;
   }
@@ -87,5 +103,24 @@
   .projects-grid {
     height: auto;
     width: 100%;
+  }
+
+  .scroll-down-icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .experience-info {
+    min-height: 400px;
+    padding: 35px 30px;
+  }
+
+  .experience-info button {
+    font-size: 18px;
+  }
+
+  .info {
+    font-size: 30px;
   }
 }

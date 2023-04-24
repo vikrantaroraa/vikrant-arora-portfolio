@@ -3,7 +3,7 @@ import ProjectsSkillsResume from "src/components/ProjectsSkillsResume";
 
 function HomePage() {
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
       <About />
       <ProjectsSkillsResume />
     </div>

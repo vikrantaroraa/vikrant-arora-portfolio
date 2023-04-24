@@ -3,8 +3,13 @@ import github from "src/assets/github.svg";
 import linkedIn from "src/assets/linkedIn.svg";
 import twitter from "src/assets/twitter.svg";
 import hamburgerMenu from "src/assets/hamburgerMenu.svg";
+import { Dispatch, SetStateAction } from "react";
 
-function Header() {
+interface HeaderProps {
+  setAppRoute: Dispatch<SetStateAction<string>>;
+}
+
+function Header({ setAppRoute }: HeaderProps) {
   return (
     <div className={styles["header"]}>
       <div className={styles["name"]}>
@@ -13,7 +18,12 @@ function Header() {
       <div className={styles["nav-menu"]}>
         <div className={styles["menu-item"]}>Home</div>
         <div className={styles["menu-item"]}>About</div>
-        <div className={styles["menu-item"]}>Projects</div>
+        <div
+          className={styles["menu-item"]}
+          onClick={() => setAppRoute("/projects")}
+        >
+          Projects
+        </div>
         <div className={styles["menu-item"]}>Resume</div>
       </div>
       <div className={styles["social-links"]}>

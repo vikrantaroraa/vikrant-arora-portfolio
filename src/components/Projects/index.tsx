@@ -12,7 +12,8 @@ import spotifyClone from "src/assets/project-screenshots/spotify-clone.png";
 import youtubeClone from "src/assets/project-screenshots/youtube-clone.png";
 import easyI from "src/assets/project-screenshots/easy-i.png";
 import easyNotes from "src/assets/project-screenshots/easy-notes.png";
-import ecommerceApp from "src/assets/project-screenshots/ecommerce-app-5.png";
+import ecommerceApp from "src/assets/project-screenshots/ecommerce-app.png";
+import downScrollSignifier from "src/assets/down-scroll-signifier.svg";
 
 const projectData = [
   {
@@ -22,6 +23,7 @@ const projectData = [
     description:
       "This is a CLI app hosted on repl. A fun quiz related to space and cosmos. Play it and i can assure you that you will learn something new today.",
     link: "https://replit.com/@VikrantArora/cosmosQuiz?output=1&embed",
+    // backgroundColor: "#ffedd9",
   },
   {
     tags: ["Node.js", "Readline Sync"],
@@ -30,6 +32,7 @@ const projectData = [
     description:
       "This is a CLI app hosted on repl. A fun quiz where you will get to know more about me.",
     link: "https://replit.com/@VikrantArora/getToKnowMe?embed=1&output=1",
+    backgroundColor: "",
   },
 
   {
@@ -39,6 +42,7 @@ const projectData = [
     description:
       "This is a clone of the famous music streaming app Spotify. It is made in ReactJS and uses the spotify web api to fetch data in real time. You can search for songs and listen to them in the music player.",
     link: "https://spotifynew.netlify.app/",
+    // backgroundColor: "#fbe9dd",
   },
   {
     tags: ["React.js", "React Redux", "Youtube API"],
@@ -47,6 +51,7 @@ const projectData = [
     description:
       "This is a clone of the famous video streaming app Youtube. It is made in ReactJS and uses the youtube data api to fetch data in real time. You can search for videos and watch them in the video player.",
     link: "https://youtubenew.netlify.app/",
+    // backgroundColor: "#edf7ff",
   },
   {
     tags: ["React.js", "React Redux", "PokeAPI"],
@@ -55,6 +60,7 @@ const projectData = [
     description:
       "Do you remember watching pokemon when you were young. This app provides you different types of info about all those pokemons. Go and find out all about your favourite pokemon now.",
     link: "https://findmeapokemon.netlify.app/",
+    // backgroundColor: "#fff6e7",
   },
   {
     tags: ["HTML", "CSS", "JavaScript", "Fun translations API"],
@@ -129,17 +135,27 @@ function Projects() {
         </button>
       </div>
       <div className={styles["projects-grid"]}>
-        {projectData.map(({ tags, name, imageUrl, description, link }) => {
-          return (
-            <ProjectCard
-              tags={tags}
-              name={name}
-              imageUrl={imageUrl}
-              description={description}
-              link={description}
-            />
-          );
-        })}
+        {projectData.map(
+          ({ tags, name, imageUrl, description, link, backgroundColor }) => {
+            return (
+              <ProjectCard
+                tags={tags}
+                name={name}
+                imageUrl={imageUrl}
+                description={description}
+                link={description}
+                backgroundColor={backgroundColor}
+              />
+            );
+          }
+        )}
+        <span className={styles["scroll-down-icon"]}>
+          <img
+            src={downScrollSignifier}
+            alt="scroll down icon"
+            title="scroll down projects"
+          />
+        </span>
       </div>
     </div>
   );
