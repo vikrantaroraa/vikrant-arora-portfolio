@@ -37,13 +37,31 @@ function Header() {
           toggleShowSidebar={toggleShowSidebar}
         />
         <div className={styles["link"]}>
-          <img src={twitter} alt="twitter profile" />
+          <a
+            href="https://twitter.com/vikrantaroraa"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={twitter} alt="twitter profile" />
+          </a>
         </div>
         <div className={styles["link"]}>
-          <img src={github} alt="github profile" />
+          <a
+            href="https://github.com/vikrantaroraa"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={github} alt="github profile" />
+          </a>
         </div>
         <div className={styles["link"]}>
-          <img src={linkedIn} alt="linkedIn profile" />
+          <a
+            href="https://www.linkedin.com/in/vikrantaroraa/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={linkedIn} alt="linkedIn profile" />
+          </a>
         </div>
         <div
           id={styles["hamburger-menu-icon"]}

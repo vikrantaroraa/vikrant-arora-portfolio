@@ -65,6 +65,10 @@
   width: 100%;
 }
 
+.social-links a {
+  text-decoration: none;
+}
+
 #hamburger-menu-icon {
   display: none;
 }
