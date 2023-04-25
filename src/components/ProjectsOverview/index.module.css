@@ -18,8 +18,18 @@
   width: fit-content;
 }
 
+@media only screen and (max-width: 850px) {
+  .heading {
+    font-size: 23px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .projects-overview {
     padding: 24px;
+  }
+
+  .heading {
+    font-size: 23px;
   }
 }

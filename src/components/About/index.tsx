@@ -1,12 +1,12 @@
 import styles from "src/components/About/index.module.css";
-import linkedIn from "src/assets/linkedIn.svg";
+import hero from "src/assets/hero-cropped.png";
 
 function About() {
   return (
     <div className={styles["about"]}>
       <div className={styles["avatar-container"]}>
         <div className={styles["avatar"]}>
-          <img src={linkedIn} alt="avatar" />
+          <img src={hero} alt="avatar" />
         </div>
       </div>
       <div className={styles["info-container"]}>
