@@ -1,5 +1,5 @@
 import styles from "src/components/About/index.module.css";
-import hero from "src/assets/hero-cropped.png";
+import hero from "src/assets/avatar.png";
 
 function About() {
   return (

@@ -61,6 +61,7 @@
   .about {
     flex-direction: column;
     height: auto;
+    gap: 22px;
   }
 
   .avatar-container {
