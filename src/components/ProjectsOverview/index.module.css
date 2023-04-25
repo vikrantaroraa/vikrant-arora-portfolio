@@ -3,12 +3,28 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background-color: #ffffff;
   /* background-color: lightcoral; */
   border: 1px solid #ececec;
   border-radius: 20px;
   padding: 28px 35px;
-  gap: 25px;
+  gap: 40px;
+}
+
+.project-cards {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.swiper-container {
+  width: 95%;
+  /* background-color: magenta; */
+}
+
+.swiper-slide {
+  width: 100%;
+  /* background-color: mediumseagreen; */
 }
 
 .heading {

@@ -41,6 +41,10 @@
   background-color: hsla(60, 6%, 51%, 0.1);
 }
 
+.menu-container a {
+  text-decoration: none;
+}
+
 .icon-container {
   height: 28px;
   width: 28px;

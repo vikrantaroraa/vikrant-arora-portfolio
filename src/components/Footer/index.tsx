@@ -2,6 +2,7 @@ import styles from "src/components/Footer/index.module.css";
 import github from "src/assets/github.svg";
 import linkedIn from "src/assets/linkedIn.svg";
 import twitter from "src/assets/twitter.svg";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className={styles["footer"]}>
@@ -9,10 +10,18 @@ function Footer() {
         <span>©2023 Vikrant Arora</span>
       </div>
       <div className={styles["nav-menu"]}>
-        <div className={styles["menu-item"]}>Home</div>
-        <div className={styles["menu-item"]}>About</div>
-        <div className={styles["menu-item"]}>Projects</div>
-        <div className={styles["menu-item"]}>Resume</div>
+        <Link to="/" className={styles["menu-item"]}>
+          Home
+        </Link>
+        <Link to="/" className={styles["menu-item"]}>
+          About
+        </Link>
+        <Link to="/projects" className={styles["menu-item"]}>
+          Projects
+        </Link>
+        <Link to="/" className={styles["menu-item"]}>
+          Resume
+        </Link>
       </div>
       <div className={styles["social-links"]}>
         <div className={styles["link"]}>

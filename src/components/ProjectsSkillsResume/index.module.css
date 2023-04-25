@@ -7,13 +7,13 @@
 }
 
 .projects {
-  flex: 1;
+  width: 50%;
 }
 
 .skills-and-resume {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  width: 50%;
   gap: 18px;
 }
 
@@ -33,9 +33,11 @@
 
   .projects {
     height: auto;
+    width: 100%;
   }
 
   .skills-and-resume {
     height: auto;
+    width: 100%;
   }
 }
