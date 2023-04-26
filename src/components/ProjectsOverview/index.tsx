@@ -25,19 +25,19 @@ const projectOverviewCardsData = [
     tags: ["React.js", "React Redux", "Spotify API"],
     name: "Spotify clone",
     description:
-      "This is a clone of the famous music streaming app Spotify. It is made in ReactJS and uses the spotify web api to fetch data in real time. You can search for songs and listen to them in the music player.",
+      "This is a clone of the famous music streaming app Spotify. It uses the spotify web api to fetch data in real time. You can search for songs and listen to them in the music player.",
   },
   {
     tags: ["React.js", "React Redux", "Youtube API"],
     name: "Youtube clone",
     description:
-      "This is a clone of the famous video streaming app Youtube. It is made in ReactJS and uses the youtube data api to fetch data in real time. You can search for videos and watch them in the video player.",
+      "This is a clone of the famous video streaming app Youtube. It uses the youtube data api to fetch data in real time. You can search for videos and watch them in the video player.",
   },
   {
     tags: ["React.js", "React Redux", "PokeAPI"],
     name: "Find me a pokemon",
     description:
-      "Do you remember watching pokemon when you were young. This app provides you different types of info about all those pokemons. Go and find out all about your favourite pokemon now.",
+      "Do you remember watching pokemon when you were young. This app provides you all the information about those pokemons. Go and find out all about your favourite pokemon.",
   },
   {
     tags: ["JavaScript", "HTML", "CSS", "Fun translations API"],
@@ -57,12 +57,12 @@ const projectOverviewCardsData = [
     description:
       "A react app made in codesandbox which provides a list of some of my favourite movies and tv series.",
   },
-  {
-    tags: ["React.js"],
-    name: "Give me some food",
-    description:
-      "This is a React JS application which gives you information about the food items when a food emoji is given as input.",
-  },
+  // {
+  //   tags: ["React.js"],
+  //   name: "Give me some food",
+  //   description:
+  //     "This is a React JS application which gives you information about the food items when a food emoji is given as input.",
+  // },
   {
     tags: ["React.js + TypeScript", "Redux"],
     name: "Ecommerce App",

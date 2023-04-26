@@ -86,14 +86,14 @@ const projectData = [
       "A react app made in codesandbox which provides a list of some of my favourite movies and tv series.",
     link: "https://fjqbu.csb.app/",
   },
-  {
-    tags: ["React.js"],
-    name: "Give me some food",
-    imageUrl: foodGuide,
-    description:
-      "This is a React JS application which gives you information about the food items when a food emoji is given as input.",
-    link: "https://ixogd.csb.app/",
-  },
+  // {
+  //   tags: ["React.js"],
+  //   name: "Give me some food",
+  //   imageUrl: foodGuide,
+  //   description:
+  //     "This is a React JS application which gives you information about the food items when a food emoji is given as input.",
+  //   link: "https://ixogd.csb.app/",
+  // },
   {
     tags: ["React.js", "TypeScript", "Redux"],
     name: "Ecommerce App",

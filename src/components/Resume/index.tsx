@@ -10,7 +10,7 @@ function Resume() {
         </span>
         <button className={styles["open-button"]}>
           <a
-            href="https://www.linkedin.com/in/vikrantaroraa/overlay/1635514661658/single-media-viewer/?profileId=ACoAACt8gEIBCJkQ5pj8190twkKbzDEgPsT_HBE"
+            href="https://drive.google.com/file/d/1aH5gD0UrMFnMH0Krlz1Ao5AWMLdqRsEJ/view"
             target="_blank"
             rel="noreferrer"
           >
