@@ -15,9 +15,9 @@
   border-bottom: 1px solid #ddd;
 }
 
-.name {
+/* .name {
   font-style: italic;
-}
+} */
 
 .menu-container {
   display: flex;
@@ -32,7 +32,7 @@
   font-weight: 500;
   gap: 10px;
   background-color: #efefef;
-  color: #002b31;
+  color: #121214;
   border-bottom: 1px solid hsla(120, 3%, 61%, 0.3);
   cursor: pointer;
 }
