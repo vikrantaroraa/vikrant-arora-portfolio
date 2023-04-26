@@ -4,7 +4,7 @@ import ProjectsPage from "src/pages/ProjectsPage";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-const Pages = () => {
+const App = () => {
   return (
     <>
       <BrowserRouter>
@@ -27,4 +27,4 @@ const Pages = () => {
   );
 };
 
-export default Pages;
+export default App;

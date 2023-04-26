@@ -21,8 +21,8 @@ function Skills() {
     <div className={styles["skills"]}>
       <div className={styles["heading"]}>Skills</div>
       <div className={styles["tiles-container"]}>
-        {skillsData.map((skill) => (
-          <SkillTile skill={skill} />
+        {skillsData.map((skill, index) => (
+          <SkillTile skill={skill} key={index} />
         ))}
       </div>
     </div>

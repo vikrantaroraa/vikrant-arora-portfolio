@@ -17,8 +17,9 @@
   align-items: center;
   font-size: 28px;
   font-weight: 600;
-  font-style: italic;
+  /* font-style: italic; */
   padding: 0;
+  /* font-family: "Playfair Display"; */
   /* background-color: lavender; */
 }
 
@@ -36,6 +37,12 @@
 .menu-item {
   font-size: 22px;
   cursor: pointer;
+}
+
+.menu-active {
+  font-weight: 600;
+  color: #000 !important;
+  text-decoration: underline !important;
 }
 
 .nav-menu a {
