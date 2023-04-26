@@ -3,7 +3,7 @@
   overflow-y: scroll;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -500%;
   transition: 550ms;
   z-index: 100;
 }

@@ -2,6 +2,7 @@
 import ProjectOverviewCard from "src/components/ProjectOverviewCard";
 import styles from "src/components/ProjectsOverview/index.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import swipeCardsSignifier from "src/assets/swipe-cards-signifier.svg";
 import { EffectCards, Mousewheel } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -57,12 +58,6 @@ const projectOverviewCardsData = [
     description:
       "A react app made in codesandbox which provides a list of some of my favourite movies and tv series.",
   },
-  // {
-  //   tags: ["React.js"],
-  //   name: "Give me some food",
-  //   description:
-  //     "This is a React JS application which gives you information about the food items when a food emoji is given as input.",
-  // },
   {
     tags: ["React.js + TypeScript", "Redux"],
     name: "Ecommerce App",
@@ -85,6 +80,14 @@ const projectOverviewCardsData = [
 function ProjectsOverview() {
   return (
     <div className={styles["projects-overview"]}>
+      {/* Uncomment this when want to use swipe cards icon */}
+      {/* <span className={styles["swipe-cards-icon"]}>
+        <img
+          src={swipeCardsSignifier}
+          alt="swipe cards icon"
+          title="swipe cards"
+        />
+      </span> */}
       <div className={styles["heading"]}>My Projects</div>
       <div className={styles["project-cards"]}>
         <Swiper
