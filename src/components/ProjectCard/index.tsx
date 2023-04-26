@@ -9,6 +9,7 @@ interface ProjectCardProps {
   description: string;
   link: string;
   backgroundColor?: string;
+  projectStatus?: string;
 }
 
 function ProjectCard({
@@ -17,7 +18,7 @@ function ProjectCard({
   imageUrl,
   description,
   link,
-  backgroundColor = "#f2e4ee",
+  projectStatus,
 }: ProjectCardProps) {
   return (
     <div className={styles["container"]}>
@@ -31,7 +32,13 @@ function ProjectCard({
         <div className={styles["image"]}>
           <img src={imageUrl} alt="project name" />
         </div>
-        <p className={styles["description"]}>{description}</p>
+        <div className={styles["description"]}>
+          {description}
+          {/* the below commented code can be used to show a message if the project is down */}
+          {projectStatus && (
+            <div className={styles["project-status"]}>({projectStatus})</div>
+          )}
+        </div>
         <a href={link} target="_blank" rel="noreferrer">
           <button className={styles["view-button"]}>
             View Project

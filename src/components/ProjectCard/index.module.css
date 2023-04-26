@@ -58,6 +58,10 @@
   margin-bottom: 25px;
 }
 
+.project-status {
+  font-size: 20px;
+}
+
 .view-button {
   font-family: "DM Sans";
   font-size: 20px;
@@ -101,6 +105,10 @@
 
   .description {
     font-size: 20px;
+  }
+
+  .project-status {
+    font-size: 18px;
   }
 
   .view-button {

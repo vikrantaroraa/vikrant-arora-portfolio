@@ -2,7 +2,6 @@ import styles from "src/components/Projects/index.module.css";
 import rightArrow from "src/assets/rightArrow.svg";
 import ProjectCard from "src/components/ProjectCard";
 import moviesGuide from "src/assets/project-screenshots/movies-guide.png";
-import foodGuide from "src/assets/project-screenshots/food-guide.png";
 import valyrianTranslator from "src/assets/project-screenshots/valyrian-translator.png";
 import minionTranslator from "src/assets/project-screenshots/minion-translator.png";
 import cosmosQuiz from "src/assets/project-screenshots/cosmos-quiz.png";
@@ -23,7 +22,6 @@ const projectData = [
     description:
       "This is a CLI app hosted on repl. A fun quiz related to space and cosmos. Play it and i can assure you that you will learn something new today.",
     link: "https://replit.com/@VikrantArora/cosmosQuiz?output=1&embed",
-    // backgroundColor: "#ffedd9",
   },
   {
     tags: ["Node.js", "Readline Sync"],
@@ -32,7 +30,6 @@ const projectData = [
     description:
       "This is a CLI app hosted on repl. A fun quiz where you will get to know more about me.",
     link: "https://replit.com/@VikrantArora/getToKnowMe?embed=1&output=1",
-    backgroundColor: "",
   },
 
   {
@@ -42,7 +39,6 @@ const projectData = [
     description:
       "This is a clone of the famous music streaming app Spotify. It is made in ReactJS and uses the spotify web api to fetch data in real time. You can search for songs and listen to them in the music player.",
     link: "https://spotifynew.netlify.app/",
-    // backgroundColor: "#fbe9dd",
   },
   {
     tags: ["React.js", "React Redux", "Youtube API"],
@@ -51,7 +47,6 @@ const projectData = [
     description:
       "This is a clone of the famous video streaming app Youtube. It is made in ReactJS and uses the youtube data api to fetch data in real time. You can search for videos and watch them in the video player.",
     link: "https://youtubenew.netlify.app/",
-    // backgroundColor: "#edf7ff",
   },
   {
     tags: ["React.js", "React Redux", "PokeAPI"],
@@ -60,7 +55,6 @@ const projectData = [
     description:
       "Do you remember watching pokemon when you were young. This app provides you different types of info about all those pokemons. Go and find out all about your favourite pokemon now.",
     link: "https://findmeapokemon.netlify.app/",
-    // backgroundColor: "#fff6e7",
   },
   {
     tags: ["HTML", "CSS", "JavaScript", "Fun translations API"],
@@ -86,14 +80,6 @@ const projectData = [
       "A react app made in codesandbox which provides a list of some of my favourite movies and tv series.",
     link: "https://fjqbu.csb.app/",
   },
-  // {
-  //   tags: ["React.js"],
-  //   name: "Give me some food",
-  //   imageUrl: foodGuide,
-  //   description:
-  //     "This is a React JS application which gives you information about the food items when a food emoji is given as input.",
-  //   link: "https://ixogd.csb.app/",
-  // },
   {
     tags: ["React.js", "TypeScript", "Redux"],
     name: "Ecommerce App",
@@ -103,19 +89,22 @@ const projectData = [
   },
   {
     tags: ["Flask", "HTML", "CSS", "JavaScript", "PostgreSQL"],
-    name: "easy-i",
+    name: "Easy-i",
     imageUrl: easyI,
     description:
       "Inventory is an important part of any organization. And thus maintaining inventory itself becomes a very important task. Easy-i is an inventory management system made in full stack flask that helps college departments to keep track of their inventory.",
     link: "https://vikrant-p2.herokuapp.com/",
+    projectStatus:
+      "Note : This project is currently down because heroku went private",
   },
   {
     tags: ["React.js", "React Redux", "Flask", "PostgreSQL"],
     name: "Easy Notes",
     imageUrl: easyNotes,
-    description:
-      "Easy Notes is a simple todo application. Here You can can create your account and login and then you can maintain your personal todos.",
+    description: `Easy Notes is a simple todo application. Here you can can create your account and maintain your personal todos.`,
     link: "",
+    projectStatus:
+      "Note : This project is currently down because heroku went private",
   },
 ];
 
@@ -127,17 +116,23 @@ function Projects() {
           Over the past few years, I’ve worked on various projects. Here’s few
           of my best
         </div>
-        <button>
-          Get in touch
-          <span className={styles["right-arrow"]}>
-            <img src={rightArrow} alt="right arrow" />{" "}
-          </span>
-        </button>
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=arora.veshu@gmail.com&su={MAIL SUBJECT} [Reference - Portfolio]&body={MAIL BODY}"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button>
+            Get in touch
+            <span className={styles["right-arrow"]}>
+              <img src={rightArrow} alt="right arrow" />{" "}
+            </span>
+          </button>
+        </a>
       </div>
       <div className={styles["projects-grid"]}>
         {projectData.map(
           (
-            { tags, name, imageUrl, description, link, backgroundColor },
+            { tags, name, imageUrl, description, link, projectStatus },
             index
           ) => {
             return (
@@ -148,7 +143,7 @@ function Projects() {
                 imageUrl={imageUrl}
                 description={description}
                 link={link}
-                backgroundColor={backgroundColor}
+                projectStatus={projectStatus}
               />
             );
           }

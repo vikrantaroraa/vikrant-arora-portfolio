@@ -14,7 +14,6 @@ function Header() {
   const { activeLink, setActiveLink } = useNavigationMenu();
 
   const toggleShowSidebar = () => setShowSidebar(!showSidebar);
-  console.log("active link: ", activeLink);
 
   return (
     <div className={styles["header"]}>
