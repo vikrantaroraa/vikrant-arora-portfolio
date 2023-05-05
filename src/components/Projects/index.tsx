@@ -10,9 +10,58 @@ import spotifyClone from "src/assets/project-screenshots/spotify-clone.png";
 import youtubeClone from "src/assets/project-screenshots/youtube-clone.png";
 import easyI from "src/assets/project-screenshots/easy-i.png";
 import ecommerceApp from "src/assets/project-screenshots/ecommerce-app.png";
+import videoPlayer from "src/assets/project-screenshots/video-player.png";
 import downScrollSignifier from "src/assets/down-scroll-signifier.svg";
 
 const projectData = [
+  {
+    tags: ["React.js", "TypeScript", "Redux"],
+    name: "Ecommerce App",
+    imageUrl: ecommerceApp,
+    description: "An Ecommerce app with all the features.",
+    link: "https://heroic-dango-a188c7.netlify.app/",
+  },
+  {
+    tags: ["React.js", "React Redux", "Spotify API"],
+    name: "Spotify clone",
+    imageUrl: spotifyClone,
+    description:
+      "This is a clone of the famous music streaming app Spotify. It is made in ReactJS and uses the spotify web api to fetch data in real time. You can search for songs and listen to them in the music player.",
+    link: "https://spotifynew.netlify.app/",
+  },
+  {
+    tags: ["React.js", "Rollup"],
+    name: "Video player",
+    imageUrl: videoPlayer,
+    description: "This is a video player library made in React.js for the web.",
+    link: "https://github.com/vikrantaroraa/javascript-video-player",
+  },
+  {
+    tags: ["React.js", "React Redux", "Youtube API"],
+    name: "Youtube clone",
+    imageUrl: youtubeClone,
+    description:
+      "This is a clone of the famous video streaming app Youtube. It is made in ReactJS and uses the youtube data api to fetch data in real time. You can search for videos and watch them in the video player.",
+    link: "https://youtubenew.netlify.app/",
+  },
+  {
+    tags: ["Flask", "HTML", "CSS", "JavaScript", "PostgreSQL"],
+    name: "Easy-i",
+    imageUrl: easyI,
+    description:
+      "Inventory is an important part of any organization. And thus maintaining inventory itself becomes a very important task. Easy-i is an inventory management system made in full stack flask that helps college departments to keep track of their inventory.",
+    link: "https://vikrant-p2.herokuapp.com/",
+    projectStatus:
+      "Note : This project is currently down because heroku went private.",
+  },
+  // {
+  //   tags: ["React.js", "React Redux", "PokeAPI"],
+  //   name: "Find me a pokemon",
+  //   imageUrl: pokemonApp,
+  //   description:
+  //     "Do you remember watching pokemon when you were young. This app provides you different types of info about all those pokemons. Go and find out all about your favourite pokemon now.",
+  //   link: "https://findmeapokemon.netlify.app/",
+  // },
   {
     tags: ["Node.js", "Readline Sync"],
     name: "Cosmos Quiz",
@@ -29,37 +78,6 @@ const projectData = [
       "This is a CLI app hosted on repl. A fun quiz where you will get to know more about me.",
     link: "https://replit.com/@VikrantArora/getToKnowMe?embed=1&output=1",
   },
-  {
-    tags: ["React.js", "TypeScript", "Redux"],
-    name: "Ecommerce App",
-    imageUrl: ecommerceApp,
-    description: "An Ecommerce app with all the features",
-    link: "https://heroic-dango-a188c7.netlify.app/",
-  },
-  {
-    tags: ["React.js", "React Redux", "Spotify API"],
-    name: "Spotify clone",
-    imageUrl: spotifyClone,
-    description:
-      "This is a clone of the famous music streaming app Spotify. It is made in ReactJS and uses the spotify web api to fetch data in real time. You can search for songs and listen to them in the music player.",
-    link: "https://spotifynew.netlify.app/",
-  },
-  {
-    tags: ["React.js", "React Redux", "Youtube API"],
-    name: "Youtube clone",
-    imageUrl: youtubeClone,
-    description:
-      "This is a clone of the famous video streaming app Youtube. It is made in ReactJS and uses the youtube data api to fetch data in real time. You can search for videos and watch them in the video player.",
-    link: "https://youtubenew.netlify.app/",
-  },
-  // {
-  //   tags: ["React.js", "React Redux", "PokeAPI"],
-  //   name: "Find me a pokemon",
-  //   imageUrl: pokemonApp,
-  //   description:
-  //     "Do you remember watching pokemon when you were young. This app provides you different types of info about all those pokemons. Go and find out all about your favourite pokemon now.",
-  //   link: "https://findmeapokemon.netlify.app/",
-  // },
   {
     tags: ["HTML", "CSS", "JavaScript", "Fun translations API"],
     name: "Valyrian Translator",
@@ -83,16 +101,6 @@ const projectData = [
     description:
       "A react app made in codesandbox which provides a list of some of my favourite movies and tv series.",
     link: "https://fjqbu.csb.app/",
-  },
-  {
-    tags: ["Flask", "HTML", "CSS", "JavaScript", "PostgreSQL"],
-    name: "Easy-i",
-    imageUrl: easyI,
-    description:
-      "Inventory is an important part of any organization. And thus maintaining inventory itself becomes a very important task. Easy-i is an inventory management system made in full stack flask that helps college departments to keep track of their inventory.",
-    link: "https://vikrant-p2.herokuapp.com/",
-    projectStatus:
-      "Note : This project is currently down because heroku went private",
   },
   // {
   //   tags: ["React.js", "React Redux", "Flask", "PostgreSQL"],

@@ -10,6 +10,34 @@ import "swiper/css/effect-cards";
 
 const projectOverviewCardsData = [
   {
+    tags: ["React.js + TypeScript", "Redux"],
+    name: "Ecommerce App",
+    description: "An Ecommerce app with all the features",
+  },
+  {
+    tags: ["React.js", "React Redux", "Spotify API"],
+    name: "Spotify clone",
+    description:
+      "This is a clone of the famous music streaming app Spotify. It uses the spotify web api to fetch data in real time. You can search for songs and listen to them in the music player.",
+  },
+  {
+    tags: ["React.js + Rollup"],
+    name: "Video player",
+    description: "This is a video player library made in React.js for the web.",
+  },
+  {
+    tags: ["React.js", "React Redux", "Youtube API"],
+    name: "Youtube clone",
+    description:
+      "This is a clone of the famous video streaming app Youtube. It uses the youtube data api to fetch data in real time. You can search for videos and watch them in the video player.",
+  },
+  {
+    tags: ["Flask + PostgreSQL", "HTML", "CSS", "JavaScript"],
+    name: "Easy-i",
+    description:
+      "Easy-i is an inventory management system made in full stack flask that helps college departments to keep track of their inventory.",
+  },
+  {
     tags: ["Node.js", "Readline Sync"],
     name: "Cosmos Quiz",
     description:
@@ -20,25 +48,6 @@ const projectOverviewCardsData = [
     name: "Get to know me",
     description:
       "This is a CLI app hosted on repl. A fun quiz where you will get to know more about me.",
-  },
-
-  {
-    tags: ["React.js", "React Redux", "Spotify API"],
-    name: "Spotify clone",
-    description:
-      "This is a clone of the famous music streaming app Spotify. It uses the spotify web api to fetch data in real time. You can search for songs and listen to them in the music player.",
-  },
-  {
-    tags: ["React.js", "React Redux", "Youtube API"],
-    name: "Youtube clone",
-    description:
-      "This is a clone of the famous video streaming app Youtube. It uses the youtube data api to fetch data in real time. You can search for videos and watch them in the video player.",
-  },
-  {
-    tags: ["React.js", "React Redux", "PokeAPI"],
-    name: "Find me a pokemon",
-    description:
-      "Do you remember watching pokemon when you were young. This app provides you all the information about those pokemons. Go and find out all about your favourite pokemon.",
   },
   {
     tags: ["JavaScript", "HTML", "CSS", "Fun translations API"],
@@ -59,15 +68,10 @@ const projectOverviewCardsData = [
       "A react app made in codesandbox which provides a list of some of my favourite movies and tv series.",
   },
   {
-    tags: ["React.js + TypeScript", "Redux"],
-    name: "Ecommerce App",
-    description: "An Ecommerce app with all the features",
-  },
-  {
-    tags: ["Flask", "HTML", "CSS", "JavaScript", "PostgreSQL"],
-    name: "easy-i",
+    tags: ["React.js", "React Redux", "PokeAPI"],
+    name: "Find me a pokemon",
     description:
-      "Easy-i is an inventory management system made in full stack flask that helps college departments to keep track of their inventory.",
+      "Do you remember watching pokemon when you were young. This app provides you all the information about those pokemons. Go and find out all about your favourite pokemon.",
   },
   {
     tags: ["Flask", "React.js", "React Redux", "PostgreSQL"],
