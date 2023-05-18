@@ -10,7 +10,7 @@ function Resume() {
         </span>
         <button className={styles["open-button"]}>
           <a
-            href="https://drive.google.com/file/d/1aH5gD0UrMFnMH0Krlz1Ao5AWMLdqRsEJ/view"
+            href="https://drive.google.com/file/d/1X8JqjPDOadeCdmheu0ar9w6ELhWWrSnd/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
