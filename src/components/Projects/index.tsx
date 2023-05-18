@@ -19,7 +19,7 @@ const projectData = [
     name: "Ecommerce App",
     imageUrl: ecommerceApp,
     description: "An Ecommerce app with all the features.",
-    link: "https://heroic-dango-a188c7.netlify.app/",
+    link: "https://jazzy-conkies-74e470.netlify.app/",
   },
   {
     tags: ["React.js", "React Redux", "Spotify API"],
