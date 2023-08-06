@@ -4,15 +4,18 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { NavigationMenuProvider } from "src/context/navigation-menu-context";
+import { ThemeContextProvider } from "src/context/theme-context";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <NavigationMenuProvider>
-      <App />
-    </NavigationMenuProvider>
+    <ThemeContextProvider>
+      <NavigationMenuProvider>
+        <App />
+      </NavigationMenuProvider>
+    </ThemeContextProvider>
   </React.StrictMode>
 );
 

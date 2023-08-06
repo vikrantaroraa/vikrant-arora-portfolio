@@ -1,4 +1,3 @@
-import "./App.css";
 import HomePage from "src/pages/HomePage";
 import ProjectsPage from "src/pages/ProjectsPage";
 

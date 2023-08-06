@@ -7,6 +7,7 @@ import { EffectCards, Mousewheel } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/effect-cards";
+import { useDarkTheme } from "src/context/theme-context";
 
 const projectOverviewCardsData = [
   {
@@ -82,8 +83,13 @@ const projectOverviewCardsData = [
 ];
 
 function ProjectsOverview() {
+  const { darkMode } = useDarkTheme();
   return (
-    <div className={styles["projects-overview"]}>
+    <div
+      className={`${styles["projects-overview"]} ${
+        darkMode ? styles["dark"] : ""
+      }`}
+    >
       {/* Uncomment this when want to use swipe cards icon */}
       {/* <span className={styles["swipe-cards-icon"]}>
         <img

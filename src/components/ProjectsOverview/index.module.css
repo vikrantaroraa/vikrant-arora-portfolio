@@ -50,6 +50,11 @@
   width: fit-content;
 }
 
+.dark {
+  color: #fff;
+  background-color: #525252;
+}
+
 @media only screen and (max-width: 850px) {
   .heading {
     font-size: 23px;
