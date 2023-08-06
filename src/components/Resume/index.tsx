@@ -1,8 +1,10 @@
 import styles from "src/components/Resume/index.module.css";
+import { useDarkTheme } from "src/context/theme-context";
 
 function Resume() {
+  const { darkMode } = useDarkTheme();
   return (
-    <div className={styles["resume"]}>
+    <div className={`${styles["resume"]} ${darkMode ? styles["dark"] : ""}`}>
       <div className={styles["heading"]}>Resume</div>
       <div className={styles["resume-container"]}>
         <span className={styles["more-details"]}>

@@ -12,6 +12,7 @@ import easyI from "src/assets/project-screenshots/easy-i.png";
 import ecommerceApp from "src/assets/project-screenshots/ecommerce-app.png";
 import videoPlayer from "src/assets/project-screenshots/video-player.png";
 import downScrollSignifier from "src/assets/down-scroll-signifier.svg";
+import { useDarkTheme } from "src/context/theme-context";
 
 const projectData = [
   {
@@ -115,9 +116,14 @@ const projectData = [
 ];
 
 function Projects() {
+  const { darkMode } = useDarkTheme();
   return (
     <div className={styles["container"]}>
-      <div className={styles["experience-info"]}>
+      <div
+        className={`${styles["experience-info"]} ${
+          darkMode ? styles["dark"] : ""
+        }`}
+      >
         <div className={styles["info"]}>
           Over the past few years, I’ve worked on various projects. Here’s few
           of my best
@@ -135,7 +141,11 @@ function Projects() {
           </button>
         </a>
       </div>
-      <div className={styles["projects-grid"]}>
+      <div
+        className={`${styles["projects-grid"]} ${
+          darkMode ? styles["dark-grid"] : ""
+        }`}
+      >
         {projectData.map(
           (
             { tags, name, imageUrl, description, link, projectStatus },

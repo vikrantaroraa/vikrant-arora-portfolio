@@ -17,6 +17,10 @@
   width: 0px;
 }
 
+.dark {
+  background-color: #282828;
+}
+
 @media only screen and (max-width: 1120px) {
   .App {
     padding: 45px 25px;

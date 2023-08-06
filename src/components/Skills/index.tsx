@@ -1,5 +1,6 @@
 import SkillTile from "src/components/SkillTile/SkillTile";
 import styles from "src/components/Skills/index.module.css";
+import { useDarkTheme } from "src/context/theme-context";
 
 const skillsData = [
   "ReactJS",
@@ -17,9 +18,16 @@ const skillsData = [
 ];
 
 function Skills() {
+  const { darkMode } = useDarkTheme();
   return (
-    <div className={styles["skills"]}>
-      <div className={styles["heading"]}>Skills</div>
+    <div className={`${styles["skills"]} ${darkMode ? styles["dark"] : ""}`}>
+      <div
+        className={`${styles["heading"]} ${
+          darkMode ? styles["heading-dark"] : ""
+        }`}
+      >
+        Skills
+      </div>
       <div className={styles["tiles-container"]}>
         {skillsData.map((skill, index) => (
           <SkillTile skill={skill} key={index} />
