@@ -15,6 +15,8 @@ const skillsData = [
   "Python",
   "Flask",
   "PostgreSQL",
+  "Rollup",
+  // "Webpack",
 ];
 
 function Skills() {

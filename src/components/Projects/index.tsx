@@ -129,7 +129,7 @@ function Projects() {
           of my best
         </div>
         <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=arora.veshu@gmail.com&su={MAIL SUBJECT} [Reference - Portfolio]&body={MAIL BODY}"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=theinsanelearner@gmail.com&su={MAIL SUBJECT} [Reference - Portfolio]&body={MAIL BODY}"
           target="_blank"
           rel="noreferrer"
         >

@@ -44,7 +44,7 @@ function SidebarMenu({ showSidebar, toggleShowSidebar }: SidebarMenuProps) {
       <MobileAndTabletSidebar showSidebar={showSidebar}>
         <div className={styles["container"]}>
           <div className={styles["name-and-icon-container"]}>
-            <span className={styles["name"]}>Vikrant</span>
+            <span className={styles["name"]}>Vikrant Arora</span>
             <span onClick={toggleShowSidebar}>X</span>
           </div>
           <div className={styles["menu-container"]} onClick={toggleShowSidebar}>
