@@ -4,8 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #ffffff;
-  /* background-color: lightgray; */
   border: 1px solid #ececec;
   border-radius: 20px;
   padding: 22px 28px;
@@ -16,13 +14,11 @@
   font-size: 25px;
   font-weight: 700;
   width: fit-content;
-  /* background-color: red; */
   flex: 1;
 }
 
 .resume-container {
   display: flex;
-  /* background-color: lightgreen; */
   flex: 3;
   height: 100%;
   align-items: center;
@@ -56,7 +52,6 @@
 .dark {
   color: #fff;
   /* background-color: #525252; */
-  background-color: transparent;
 }
 
 @media only screen and (max-width: 600px) {

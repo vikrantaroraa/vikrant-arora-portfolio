@@ -2,7 +2,6 @@
   height: 300px;
   width: 100%;
   display: flex;
-  background: #ffffff;
   border: 1px solid #ececec;
   border-radius: 20px;
   padding: 24px;
@@ -44,7 +43,6 @@
 .dark {
   color: #fff;
   /* background-color: #525252; */
-  background-color: transparent;
 }
 
 .heading {

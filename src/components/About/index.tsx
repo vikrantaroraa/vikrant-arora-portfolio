@@ -1,6 +1,5 @@
 import styles from "src/components/About/index.module.css";
-import hero from "src/assets/avatar.png";
-import hero2 from "src/assets/vikrant-profile-image-2.png";
+import hero from "src/assets/vikrant-profile-image-2.png";
 import { useDarkTheme } from "src/context/theme-context";
 
 function About() {
@@ -9,7 +8,7 @@ function About() {
     <div className={`${styles["about"]} ${darkMode ? styles["dark"] : ""}`}>
       <div className={styles["avatar-container"]}>
         <div className={styles["avatar"]}>
-          <img src={hero2} alt="avatar" />
+          <img src={hero} alt="avatar" />
         </div>
       </div>
       <div className={styles["info-container"]}>
