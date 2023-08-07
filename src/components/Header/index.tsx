@@ -23,7 +23,7 @@ function Header() {
   return (
     <div className={`${styles["header"]} ${darkMode ? styles["dark"] : ""}`}>
       <div className={styles["name"]}>
-        <h3 style={{ color: "#ffa7c4" }}>VA</h3>
+        <h3 style={{ color: darkMode ? "#fff" : "#000" }}>VA</h3>
       </div>
       <div className={styles["nav-menu"]}>
         <Link
