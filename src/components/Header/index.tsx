@@ -3,7 +3,8 @@ import styles from "src/components/Header/index.module.css";
 import github from "src/assets/github.svg";
 import linkedIn from "src/assets/linkedIn.svg";
 import twitter from "src/assets/twitter.svg";
-import hamburgerMenu from "src/assets/hamburgerMenu.svg";
+import hamburgerMenuBlack from "src/assets/hamburgerMenuBlack.svg";
+import hamburgerMenuWhite from "src/assets/hamburgerMenuWhite.svg";
 import moonIcon from "src/assets/moon.svg";
 import sunIcon from "src/assets/sun.svg";
 import { useState } from "react";
@@ -22,7 +23,7 @@ function Header() {
   return (
     <div className={`${styles["header"]} ${darkMode ? styles["dark"] : ""}`}>
       <div className={styles["name"]}>
-        <h3 style={{ color: "#ffa7c4" }}>VA</h3>
+        <h3 style={{ color: darkMode ? "#fff" : "#000" }}>VA</h3>
       </div>
       <div className={styles["nav-menu"]}>
         <Link
@@ -118,7 +119,11 @@ function Header() {
           className={styles["link"]}
           onClick={toggleShowSidebar}
         >
-          <img src={hamburgerMenu} alt="menu" />
+          {darkMode ? (
+            <img src={hamburgerMenuWhite} alt="menu" />
+          ) : (
+            <img src={hamburgerMenuBlack} alt="menu" />
+          )}
         </div>
       </div>
     </div>
