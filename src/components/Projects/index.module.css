@@ -75,9 +75,10 @@
   height: 40px;
   width: 40px;
   position: absolute;
-  bottom: 50px;
+  bottom: 120px;
   right: -20px;
   z-index: 10;
+  cursor: pointer;
 }
 
 .scroll-down-icon img {

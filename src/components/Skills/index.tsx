@@ -3,20 +3,19 @@ import styles from "src/components/Skills/index.module.css";
 import { useDarkTheme } from "src/context/theme-context";
 
 const skillsData = [
-  "ReactJS",
+  "React",
   "TypeScript",
   "GraphQL",
   "Storybook",
+  "React Native",
   "Jest",
   "Gatsby",
-  "NestJS",
-  "TypeORM",
+  "NextJS",
+  "Rollup",
+  "Vite",
   "Express",
   "Python",
   "Flask",
-  "PostgreSQL",
-  "Rollup",
-  // "Webpack",
 ];
 
 function Skills() {

@@ -5,7 +5,9 @@
   height: auto;
   width: 100%;
   border-radius: 20px;
-  background-color: #f2ece4;
+  /* background-color: #f2ece4; */
+  /* background-color: #f8f8f8; */
+  background-color: #f6f8fa;
   padding: 40px 35px;
   gap: 30px;
 }
@@ -59,7 +61,7 @@
 }
 
 .project-status {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .view-button {
@@ -69,7 +71,7 @@
   color: #fff;
   width: fit-content;
   background-color: #121214;
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
