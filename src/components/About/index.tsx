@@ -17,10 +17,12 @@ function About() {
         </div>
         <div className={styles["info"]}>
           I am a Frontend-heavy full stack developer with 2 years of experience
-          in the JavaScript ecosystem, where i have worked heavily on frontend
-          and also did some backend as well. I also happen to have 2 years of
-          experience working on personal projects where i have made full stack
-          applications in React, Flask, and PostgreSQL.
+          in the JavaScript ecosystem, where i have worked heavily on the
+          frontend and also did some backend in Node.js as well. A passionate
+          developer who loves to build amazing products with a knack to make
+          things better. I am interested in joining as a frontend developer and
+          looking forward to building great tech products. And yeah, I am
+          extremely good at writing documentation.
         </div>
       </div>
     </div>
