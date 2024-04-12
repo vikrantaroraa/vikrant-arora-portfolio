@@ -11,7 +11,7 @@ function Resume() {
           More details about my career
         </span>
         <a
-          href="https://drive.google.com/file/d/1IJPjWSN1kQ9ZBstcdqwsEGJNPMClG1Tm/view?usp=sharing"
+          href=" https://drive.google.com/file/d/16Aowdk2wN67e1WTBgsJgip4v9TArTDq6/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
